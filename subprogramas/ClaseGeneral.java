@@ -27,7 +27,7 @@ public class ClaseGeneral {
 
         int resultA=objLT.print("Ingrese un valor", 0);
         int resultB=objLT.print("Ingrese un valor", 0);
-        obj.sumar(resultA, resultB);
+        System.out.println(obj.sumar(resultA, resultB));
     }
 
 }
