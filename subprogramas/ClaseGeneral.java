@@ -7,6 +7,8 @@ public class ClaseGeneral {
     static Scanner lt=new Scanner(System.in);
     static Aritmetica obj=new Aritmetica();
     static Persona objP=new Persona();
+    static LeerTeclado objLT=new LeerTeclado();
+
 
     public static void main(String[] args) {
         /*System.out.println("Ingrese el Primer Valor:");
@@ -16,12 +18,16 @@ public class ClaseGeneral {
         int result=obj.sumar(aX, bX);
         System.out.println("La Suma es:"+result);*/
 
-        System.out.println("Ingrese su nombre:");
+        /*System.out.println("Ingrese su nombre:");
         objP.nombre=lt.next();
         System.out.println("Ingrese su dni:");
         objP.dni=lt.next();
         System.out.println("Ingrese una comida:");
-        objP.comer(lt.next());
+        objP.comer(lt.next());*/
+
+        int resultA=objLT.print("Ingrese un valor", 0);
+        int resultB=objLT.print("Ingrese un valor", 0);
+        obj.sumar(resultA, resultB);
     }
 
 }

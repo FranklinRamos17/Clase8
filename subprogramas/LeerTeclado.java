@@ -13,7 +13,7 @@ public class LeerTeclado {
         valor=Integer.parseInt(br.readLine());    
         } catch (Exception e) {
           System.err.println("El valor que ingreso es incorrecto");
-            
+
         }
         
         return valor;
